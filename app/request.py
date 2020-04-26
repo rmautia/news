@@ -1,11 +1,11 @@
 import urllib.request,json
 from .models import Article, Category, Source , Headlines
 
-# Getting api key
+# Getting the api key
 api_key = None
-# Getting source url
+# Getting the source url
 source_url= None
-# Getting source url
+# Getting the source url
 cat_url= None
 
 def configure_request(app):
