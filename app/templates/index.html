@@ -1,6 +1,6 @@
 {% extends 'base.html'%} 
-{% import 'macros.html' as macro%}
 
+{% block content %}
 
 <!-- Styles block -->
 {% block styles%} 
@@ -9,7 +9,6 @@
 <br>
 <br>
 <br>
-{% block content %}
 
 <body>
     <div class="container">
@@ -43,7 +42,7 @@
         </div>
 
         <div class="col-9">
-          <h1 class="pp text-center"> HEADLINE NEWS </h3>
+          <h1> HEADLINE NEWS </h3>
           <div class="container">
             <div class="card-columns">
               {% for headlines in headlines %}
