@@ -49,7 +49,8 @@ Raphael Nyangenya
         * make sure to exclude the < > symbols. example 'sbdzgtsshb'
 
 * To run the application, in your terminal:
-        prerequisite
+
+        * prerequisite
         $ chmod +x start.sh
 
         then run the command
@@ -66,9 +67,9 @@ Raphael Nyangenya
 * Bootstrap
 
 ## contact
-email- raphaelnyangenya@gmail.com
-phone - +254704445630
-Github - rmautia
+* email- raphaelnyangenya@gmail.com
+* phone - +254704445630
+* Github - rmautia
 
 ## License
 MIT
@@ -77,7 +78,7 @@ Copyright (c) 2020 Raphael Nyangenya
 ------------
 
 ### Permission
-You can fork, clone and use for academic purposes or individual purposes. Further credits can be extended to rmautia on Github
+Permission i
 
 
 
