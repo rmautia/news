@@ -1,11 +1,10 @@
 ## NewsAPI
-
-## Author
-Raphael Nyangenya
-
 ## About the application
  This is a simple web application that displays a list of several news sources and articles from across various media outlets. This application achieves its functionality by using the [News API](https://newsapi.org/).
 
+
+## Author(s)
+Raphael Nyangenya
 
 ## SetUp / Installation Requirements
 ### Prerequisites
