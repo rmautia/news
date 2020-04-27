@@ -72,13 +72,13 @@ Raphael Nyangenya
 * Github - rmautia
 
 ## License
-MIT
-Copyright (c) 2020 Raphael Nyangenya
+- MIT
+- Copyright (c) 2020 Raphael Nyangenya
 
 ------------
 
 ### Permission
-Permission i
+- Permission is hereby granted for further use of the application for development purposes. 
 
 
 
