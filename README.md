@@ -34,34 +34,45 @@ Raphael Nyangenya
 
 * Setting up the API Key
 
-        To be able to gather article info from the News API you will need an API Key.
+        To get the news articles, you will require an Api.
 
-        * Visit https://newsapi.org/ and register for an API key.
-        * In the root directory of the project folder create a file: start.sh
-        * Insert the following info into it:
+        Worry not, getting one is easy
+        follow the following steps
+        * head on to https://newsapi.org/ and register for an API key.
+        * within the root directory of the project folder create a file: start.sh
+        * Input the below information into the start.sh
 
                 export NEWS_API_KEY='<Your-Api-Key>'
-                python3.6 manage.py server
+                python3 manage.py server
 
         * Insert the API Key you received from News Api where <Your-Api-Key> is.
+        * make sure to exclude the < > symbols. example 'sbdzgtsshb'
 
 * To run the application, in your terminal:
-
+        prerequisite
         $ chmod +x start.sh
+
+        then run the command
         $ ./start.sh
 
 ## Testing the Application
 * To run the tests for the class files:
 
-        $ python3.6 manage.py tests
+        $ python3 manage.py tests to test for all tests
 
 ## Technologies Used
-* Python3.6
+* Python3.7
 * Flask
+* Bootstrap
+
+## contact
+email- raphaelnyangenya@gmail.com
+phone - +254704445630
+Github - rmautia
 
 ## License
 
-Copyright (c) 2018 emdeechege
+Copyright (c) 2020 Raphael Nyangenya
 
 ------------
 
