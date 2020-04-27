@@ -10,7 +10,7 @@ class SourceTest(unittest.TestCase):
         '''
         Set up method that will run before every Test
         '''
-        self.new_source = Source('cnn','CNN.','View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN','https://www.nytimes.com/2018/08/31/sports/tennis/us-open-results.html')
+        self.new_source = Source('cnn','CNN.','View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN','https://www.nytimes.com/2018/08/31/sports/tennis/us-open-results.html',"2020-04-26T23:28:12Z", "App has been downloaded 1 million times in a matter of hours")
 
     def test_instance(self):
         '''

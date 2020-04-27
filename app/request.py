@@ -57,7 +57,7 @@ def process_results(source_list):
     print("source_results")
 
 def article_source(url):
-    article_source_url = 'https://newsapi.org/v2/top-headlines?sources={}&apiKey={}'.format(id,api_key)
+    article_source_url = 'https://newsapi.org/v2/top-headlines?sources={}&apiKey={}'
     print(article_source_url)
     with urllib.request.urlopen(article_source_url) as url:
         article_source_data = url.read()
@@ -113,7 +113,7 @@ def get_headlines():
     '''
     function that gets the response to the category json
     '''
-    get_headlines_url = 'http://newsapi.org/v2/everything?q=bitcoin&from=2020-03-27&sortBy=publishedAt&apiKey={}'.format(api_key)
+    get_headlines_url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey={}'.format(api_key)
     print(get_headlines_url)
     with urllib.request.urlopen(get_headlines_url) as url:
         get_headlines_data = url.read()
