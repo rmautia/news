@@ -1,6 +1,6 @@
 ## NewsAPI
 ## About the application
- This is a simple web application that displays a list of several news sources and articles from across various media outlets. This application achieves its functionality by using the [News API](https://newsapi.org/).
+ This is a simple web application that displays a list of several news sources and articles from across various media outlets. This application achieves its functionality by using the [News API](https://newsapi.org/). found online at https://newsapi-ranaya.herokuapp.com/
 
 
 ## Author(s)
