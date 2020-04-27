@@ -4,13 +4,11 @@
     {{ super() }}
 <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}"> 
 {% endblock %}
-
-
 <!-- Content block -->
     {% block content %}
     <div class="container">
         <form>
-            <input type="text" name="source_query" placeholder="Search for a Source" class="form-control">
+            <input type="text" name="source_query" placeholder="Search for  sources" class="form-control">
             <input type="submit"  value="Submit" class="btn btn-default">
         </form>
     
@@ -23,7 +21,7 @@
         <div class="col-3">
           <div class="card-column">
             <div class="card-header">
-              <h4>Browse News Sources</h4>
+              <h4>News Sources</h4>
             </div>
             <div class="list-group list-group-flush scrolly">
               <ul>
