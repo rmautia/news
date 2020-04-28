@@ -4,7 +4,7 @@
 }
 .container-fluid {
   display: flex;
-  background-color: aqua;
+  background: aqua;
 }
 .col-9 {
   overflow-y: auto;
