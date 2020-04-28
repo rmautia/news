@@ -1,51 +1,47 @@
 {% extends 'base.html'%} 
+{% import 'macros.html' as macro%}
 <!-- Styles block -->
 {% block styles%} 
     {{ super() }}
 <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}"> 
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Libre+Baskerville|Merienda|ZCOOL+XiaoWei" rel="stylesheet">
 {% endblock %}
 <!-- Content block -->
-    {% block content %}
-    <div class="container">
-        <form>
-            <input type="text" name="headline_query" placeholder="Search for  source headlines" class="form-control">
-            <input type="submit"  value="Submit" class="btn btn-default">
-        </form>
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
     
+    <div class="col-md-6 title">
+        <h1>News Headlines</h1>
+        <h5><em>~ News at your finger tips! ~</em></h5>
+    </div>
+        
+    <div class="col-sm-12 col-md-12">
+    <h2>Available News Sources</h2>
     </div>
 
-    <div class="main">
-    <div class="container-fluid">
-      <div class="row">
-
-        <div class="col-9">
-          <h1> Source Headlines </h3>
-          <div class="container">
-            <div class="card-columns">
-              {% for headlines in headlines %}
-
-              <div class="card">
-                <img class="card" src="{{headlines.image}}" alt="Card image cap" size="100px180">
-                <div class="card-body">
-                  <h5 class="card-title">{{headlines.author}}</h5>
-                  <p class="card-text">{{headlines.description}}</p>
-                  <a href="{{headlines.url}}">
-                    <p class="card-text">Click here for more details!</p>
-                  </a>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">Publish date:{{headlines.time}}</small>
-                </div>
-              </div>
-              {% endfor %}
+    <div class="row">
+    {% if sort_type == 'Category' %}
+        <div class="category">
+        {% for Category in Categories %}
+            <div class="col-sm-12 col-md-12">
+            {{macro.displayCategory(Category)}}
             </div>
-          </div>
+            <ul class="row">
+            {{macro.displaySources(Category)}}
+            </ul>
+        {% endfor %}
         </div>
 
-      </div>
+    {% else %}
+        <div class="all">
+        <ul class="row">
+            {{macro.displaySources(sources)}}
+        </ul>
+        </div>
+    {% endif %}
+    <h3>Powered by NewsAPI</h3>
     </div>
-    </div>
+</div>
+{% endblock %}
 
-
-
-    {% endblock %}

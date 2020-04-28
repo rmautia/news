@@ -4,9 +4,9 @@
 }
 .container-fluid {
   display: flex;
-  background-color: aqua;
+  background-color:white;
 }
 .col-9 {
   overflow-y: auto;
-  height: 90vh; /* NEW */
+  height: 100vh; 
 }
